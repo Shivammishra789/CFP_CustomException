@@ -1,7 +1,7 @@
 '''
 @author: Shivam Mishra
 @date: 20-12-21 8:59 PM
-@desc: test cases done with help of unit test
+@desc: test cases done for user registration
 '''
 
 from user_registration_exception import UserRegistrationException
