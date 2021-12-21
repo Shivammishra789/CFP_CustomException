@@ -54,5 +54,29 @@ class UserRegistration:
             raise UserRegistrationException('Invalid email id')
 
 
+user = UserRegistration()
+first_name = input("Enter first name: ")
+try:
+    user.set_first_name(first_name)
+    user.set_first_name = first_name
+except UserRegistrationException as exception:
+    print(exception.__str__())
+last_name = input("Enter last name: ")
+try:
+    user.set_first_name(last_name)
+except UserRegistrationException as exception:
+    print(exception.__str__())
 
+phone_no = input('Enter phone number')
+try:
+    user.set_phone_no()
+except UserRegistrationException as exception:
+    print(exception.__str__())
 
+email = input("Enter email id: ")
+try:
+    user.set_email(email)
+except UserRegistrationException as exception:
+    print(exception.__str__())
+finally:
+    print('finally block is executed')

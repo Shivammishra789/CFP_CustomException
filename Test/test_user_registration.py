@@ -15,10 +15,10 @@ class TestUserDetails(unittest.TestCase):
     '''
 
     def test_given_first_name_is_valid(self):
-        excepted = 'Shivam'
+        result = 'Shivam'
         user = UserRegistration()
-        user.set_first_name(excepted)
-        self.assertEqual(excepted,user.get_first_name())
+        user.set_first_name(result)
+        self.assertEqual(result,user.get_first_name())
 
     def test_given_first_name_is_invalid(self):
         result = 'shivam'
